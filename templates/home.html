@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special projects</title>
+  <style>
+    #container{
+      max-width:720px;
+      margin:auto;
+    }
+    h1{
+      font-size: 80px;
+      font-family: Roboto;
+      color: grey;
+      text-align : center;
+      
+    }
+    #banner{
+      width: 100%;
+      height 320px;
+    }
+    h2{
+      font-size: 28px;
+      font-family: Roboto;
+      color: grey;
+      text-align : center
+    }
+    p{
+      font-family: Roboto;
+    }
+  </style>
+</head>
+<body>
+ <div id="container">
+   <h1>Careers</h1>
+   <img id ="banner" src="static/banner.jpg">
+   <h2>About Bush</h2>
+   <p>
+   My name is Mabuoc Manyuat am 22yrs and i code and generate
+     output, i also offer careers to talented engineers
+   </p>
+   <h2>Open Positions</h2>
+   <p>Todo Jobs here</p>
+   <div>
+      {% for job in jobs %}
+      {% include 'jobitems.html' %}
+      {% endfor %}
+     </div>
+   <div style="text-align:center;">
+     <button>Contact Us</button> 
+     <p>CopyRight 2022, Bush</p>
+ </div> 
+</body>
+</html>
